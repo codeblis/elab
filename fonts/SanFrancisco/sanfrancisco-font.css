@@ -1,0 +1,42 @@
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco Ultra Light";
+  font-display: block;
+  font-weight: 100;
+  src: url("font/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco Thin";
+  font-weight: 200;
+  src: url("font/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco Regular";
+  font-weight: 400;
+  src: url("font/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco Medium";
+  font-weight: 500;
+  src: url("font/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco Semi Bold";
+  font-weight: 600;
+  src: url("font/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco Bold";
+  font-weight: 700;
+  src: url("font/sanfranciscodisplay-bold-webfont.woff");
+}

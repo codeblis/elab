@@ -1,3 +1,8 @@
+html {
+  font-family: "San Francisco Regular";
+  font-size: 1.2rem;
+}
+
 body {
   background: #ec008c; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -52,6 +57,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.24);
   color: #eee;
   text-align: center;
+  font-size: 0.9rem;
   position: fixed;
   left: 50%;
   bottom: 0;
