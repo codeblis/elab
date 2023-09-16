@@ -1,0 +1,22 @@
+
+
+        []   Un encabezado que abarca todo el ancho del sitio que contiene el título principal de la página, 
+        el logotipo del sitio y el menú de navegación. El título y el logotipo aparecen lado a lado una vez
+        que se aplica el estilo, y la navegación aparece debajo de esos dos elementos.
+
+        []  Un área de contenido principal que contiene dos columnas: un bloque principal para contener el 
+        texto de bienvenida y una barra lateral para contener miniaturas de imágenes. 
+
+        []  Un pie de página que contiene información sobre derechos de autor y créditos.
+
+        []  Debe agregar una presentación adecuada para:
+
+            []    El encabezado
+            []    El menú de navegación
+            []    El contenido principal
+            []    El texto de bienvenida
+            []    La barra lateral de imágenes
+            []    El pié de página
+
+        []  Aplicar el CSS proporcionado a la página agregando otro elemento <link> justo debajo del existente
+        que se proporciona al principio.
