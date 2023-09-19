@@ -2,6 +2,7 @@ html {
   font-family: "Times New Roman", Times, serif;
 }
 body {
+  padding: 20px;
   max-width: 800px;
   margin: 0 auto;
   margin-top: 1rem;
