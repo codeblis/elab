@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "CroissantOne-Regular";
+  src: url(fonts/CroissantOne-Regular.ttf);
+}
+
+:root {
+  --yablue: #00a8f5e5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-width: 300px;
+  font-family: "CroissantOne-Regular";
+}
+
+header {
+  padding: 0.5em 0;
+  background-color: var(--yablue);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  min-width: 300px;
+}
+
+.logo {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.and {
+  font-size: 0.8em;
+  margin: 10px 2px 0 0;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: var(--yablue);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 300ms ease-in-out;
+}
+
+.menu {
+  list-style: none;
+  padding: 0.5em 1em;
+}
+
+.menu-item {
+  margin: 1em 0;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.menu-item a:hover {
+  color: #000;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+  display: block;
+  background-color: #fff;
+  height: 2px;
+  width: 1.5em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  position: absolute;
+}
+
+.menu-icon::after {
+  top: 7px;
+}
+
+.menu-icon::before {
+  bottom: 7px;
+}
+
+main {
+  background-color: ;
+  padding: 2em;
+}
+
+.banner {
+  padding: 5rem 0 1rem 0;
+  text-align: center;
+}
+
+.logo-img {
+  width: 80%;
+  max-width: 500px;
+}
+
+footer {
+  background-color: var(--yablue);
+  padding: 2em 0;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(222, 1fr) 1fr;
+  }
+
+  .logo {
+    grid-column: 1;
+    display: flex;
+    margin-left: 2em;
+    align-items: center;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 3;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .menu-item a {
+    opacity: 1;
+  }
+}
