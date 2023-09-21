@@ -1,0 +1,96 @@
+html {
+  font-family: "San Francisco Regular";
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  border: 2px solid #333;
+}
+
+td,
+th {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+}
+
+th {
+  font-family: "San Francisco Bold" !important;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  color: rgb(253, 253, 253);
+  background-color: rgb(0, 117, 168);
+}
+
+td {
+  text-align: center;
+}
+
+caption {
+  padding: 10px;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(255, 255, 255);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(246, 246, 246);
+}
+
+td p {
+  border-radius: 17px;
+  padding: 5px 10px;
+}
+
+.fuego {
+  background-color: #fd7d24;
+  color: #fff;
+}
+
+.agua {
+  background-color: #4592c4;
+  color: #fff;
+}
+
+.planta {
+  background-color: #9bcc50;
+}
+
+.veneno {
+  background-color: #b97fc9;
+  color: #fff;
+}
+
+.volador {
+  background: linear-gradient(#3dc7ef 50%, #bdb9b8 50%);
+  background-color: #3dc7ef;
+  background-color: #bdb9b8;
+}
+
+.electrico {
+  background-color: #eed535;
+}
+
+.especial {
+  background: linear-gradient(
+    red 16.66%,
+    orange 0 33.33%,
+    yellow 0 50%,
+    green 0 66.66%,
+    blue 0 83.33%,
+    indigo 0
+  );
+  color: #000;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+td img {
+  width: 10em;
+}
+
+.desc {
+  width: 200px;
+}
