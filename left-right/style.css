@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  width: 70vw;
+  height: 80vh;
+  margin: 2em auto;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.box {
+  position: relative;
+  height: 20%;
+}
+
+.ball,
+.right-ball {
+  position: absolute;
+  cursor: pointer;
+}
+
+.ball {
+  background-color: greenyellow;
+  width: 100px;
+  height: 100px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+
+  margin-left: 0;
+  transition: margin-left 800ms ease-in-out, background-color 800ms ease-in-out;
+}
+
+.right-ball {
+  background-color: rgb(0, 238, 255);
+  width: 100px;
+  height: 100px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+
+  margin-left: calc(100% - 100px);
+  transition: margin 800ms ease-in-out, background-color 800ms ease-in-out;
+}
