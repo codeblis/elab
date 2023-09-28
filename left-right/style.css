@@ -25,9 +25,12 @@
   height: 100px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   border-radius: 100%;
-
   margin-left: 0;
-  transition: margin-left 800ms ease-in-out, background-color 800ms ease-in-out;
+  transition: margin-left 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.ball:active {
+  clip-path: circle();
 }
 
 .right-ball {
@@ -38,5 +41,9 @@
   border-radius: 100%;
 
   margin-left: calc(100% - 100px);
-  transition: margin 800ms ease-in-out, background-color 800ms ease-in-out;
+  transition: margin 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.right-ball:active {
+  clip-path: circle();
 }
