@@ -126,16 +126,3 @@ article {
   height: 100vh;
   background-color: #efefef;
 }
-
-form::after {
-  display: block;
-  content: "Hello I'm a Form";
-  font-size: large;
-  background-color: pink;
-}
-
-.after::after {
-  content: "papucho";
-  color: pink;
-  font-size: 1.5em;
-}
