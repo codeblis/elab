@@ -8,6 +8,7 @@
 
 html {
   font-family: "San Francisco Regular";
+  scroll-behavior: smooth;
 }
 
 header {
@@ -15,11 +16,12 @@ header {
   position: fixed;
   padding: 1em 2em;
   z-index: 999;
-  background-color: #fff;
+  background-color: #e0002c;
 }
 
 .logo {
   text-align: center;
+  color: #fff;
 }
 
 .nav-toggle {
@@ -44,7 +46,7 @@ nav {
 
 nav ul {
   list-style: none;
-  background-color: #222;
+  background-color: #111;
 }
 
 nav li a {
@@ -88,7 +90,7 @@ nav li a:hover {
 .menu-icon::before,
 .menu-icon::after {
   display: block;
-  background-color: #000;
+  background-color: #fff;
   height: 2px;
   width: 1.5em;
   border-radius: 2px;
@@ -114,11 +116,10 @@ nav li a:hover {
 }
 
 article {
-  padding: 1rem;
-  margin-bottom: 7rem;
+  padding: 1rem 2rem;
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
   padding-top: 12vh;
   background-color: #f2f2f2;
 }
@@ -143,7 +144,7 @@ article {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #222;
+  background-color: #e0002c;
   padding: 0.5em 1em;
   text-align: center;
   font-size: 1.2rem;
@@ -230,6 +231,14 @@ sup {
 .image-video {
   background-image: url("img/video.jpg");
 }
+
+.image-fuente {
+  background-image: url("img/fuente.png");
+}
+
+.image-display {
+  background-image: url("img/monitor.jpg");
+}
 .card-abstract {
   font-size: 1.1em;
   padding: 1em;
@@ -253,4 +262,38 @@ sup {
   text-align: center;
   font-size: 1.2rem;
   color: #fff;
+}
+
+.up {
+  display: block;
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5em 0.5em 0.3em 0.5em;
+  top: 85vh;
+  right: 3vh;
+  background-color: #000;
+  font-family: "San Francisco Regular";
+  font-size: 1.1em;
+  color: #fff;
+  border-radius: 5px;
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.up.active {
+  opacity: 1;
+}
+
+.icon-up {
+  filter: invert(100%);
+  padding: 0;
+  margin: 0;
+}
+
+.icon-up {
+  width: 25px;
+  height: 25px;
 }

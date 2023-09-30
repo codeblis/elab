@@ -101,3 +101,29 @@ video_title.addEventListener("click", () => {
     video_details.className = "card-details-open";
   } else video_details.className = "card-details";
 });
+
+const fuente_title = document.querySelector("#fuente-title");
+const fuente_chevron = document.querySelector("#fuente-chevron");
+const fuente_details = document.querySelector("#fuente-details");
+
+fuente_title.addEventListener("click", () => {
+  if (fuente_chevron.className === "chevron")
+    fuente_chevron.className = "chevron-open";
+  else fuente_chevron.className = "chevron";
+  if (fuente_details.className === "card-details") {
+    fuente_details.className = "card-details-open";
+  } else fuente_details.className = "card-details";
+});
+
+const display_title = document.querySelector("#display-title");
+const display_chevron = document.querySelector("#display-chevron");
+const display_details = document.querySelector("#display-details");
+
+display_title.addEventListener("click", () => {
+  if (display_chevron.className === "chevron")
+    display_chevron.className = "chevron-open";
+  else display_chevron.className = "chevron";
+  if (display_details.className === "card-details") {
+    display_details.className = "card-details-open";
+  } else display_details.className = "card-details";
+});
