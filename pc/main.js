@@ -127,3 +127,29 @@ display_title.addEventListener("click", () => {
     display_details.className = "card-details-open";
   } else display_details.className = "card-details";
 });
+
+const mouse_title = document.querySelector("#mouse-title");
+const mouse_chevron = document.querySelector("#mouse-chevron");
+const mouse_details = document.querySelector("#mouse-details");
+
+mouse_title.addEventListener("click", () => {
+  if (mouse_chevron.className === "chevron")
+    mouse_chevron.className = "chevron-open";
+  else mouse_chevron.className = "chevron";
+  if (mouse_details.className === "card-details") {
+    mouse_details.className = "card-details-open";
+  } else mouse_details.className = "card-details";
+});
+
+const teclado_title = document.querySelector("#teclado-title");
+const teclado_chevron = document.querySelector("#teclado-chevron");
+const teclado_details = document.querySelector("#teclado-details");
+
+teclado_title.addEventListener("click", () => {
+  if (teclado_chevron.className === "chevron")
+    teclado_chevron.className = "chevron-open";
+  else teclado_chevron.className = "chevron";
+  if (teclado_details.className === "card-details") {
+    teclado_details.className = "card-details-open";
+  } else teclado_details.className = "card-details";
+});

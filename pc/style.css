@@ -117,8 +117,8 @@ nav li a:hover {
 
 article {
   padding: 1rem 2rem;
-  display: grid;
   gap: 1.5rem;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
   padding-top: 12vh;
   background-color: #f2f2f2;
@@ -173,10 +173,15 @@ article {
     padding 200ms ease-in-out;
 }
 
+.card-details-open li {
+  text-justify: inter-character;
+  margin-bottom: 1em;
+}
+
 .card-details-open {
   background-color: #fff;
   padding: 1rem;
-  height: 12rem;
+  height: 20rem;
   overflow: scroll;
   opacity: 1;
   transition: height 300ms ease-in-out, opacity 200ms ease-in-out 150ms,
@@ -238,6 +243,14 @@ sup {
 
 .image-display {
   background-image: url("img/monitor.jpg");
+}
+
+.image-mouse {
+  background-image: url("img/mouse.jpg");
+}
+
+.image-teclado {
+  background-image: url("img/teclado.png");
 }
 .card-abstract {
   font-size: 1.1em;
