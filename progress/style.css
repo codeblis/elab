@@ -49,6 +49,8 @@ aside {
   max-width: 100%;
   border-radius: 25px;
   overflow: hidden;
+  transition: width 200ms ease-in-out, height 200ms ease-in-out,
+    border-radius 200ms ease-in-out;
 }
 
 #progress-bar-value {
@@ -56,6 +58,8 @@ aside {
   width: 60%;
   height: 20px;
   color: #fff;
+  transition: width 200ms ease-in-out, height 200ms ease-in-out,
+    border-radius 200ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 #progress-bar-content {
