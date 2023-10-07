@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  background-color: #efefef;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 2em 0;
+  text-align: center;
+}
+
+section {
+  display: grid;
+  gap: 1em;
+  padding: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+}
+
+.progress-bar-container,
+aside {
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar-container {
+  padding: 1em 2em;
+}
+
+#progress-bar {
+  background-color: #eee;
+  height: 20px;
+  width: 250px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+#progress-bar-value {
+  background-color: rgb(0, 110, 255);
+  float: left;
+  width: 60%;
+  height: 20px;
+  color: #fff;
+}
+
+aside {
+  padding: 1em;
+}
+
+aside ul {
+  list-style: none;
+  font-size: 1.1em;
+}
+
+aside ul li {
+  margin: 1em 0;
+}
+
+aside ul li label {
+  margin-right: 1em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #222;
+  width: 100%;
+  padding: 1em 0;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1em;
+}

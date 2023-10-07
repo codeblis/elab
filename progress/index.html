@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Progress Bar</title>
+  </head>
+  <body>
+    <header>
+      <h1>Custom Progress Bar</h1>
+    </header>
+    <section>
+      <div class="progress-bar-container">
+        <div id="progress-bar">
+          <div id="progress-bar-value"></div>
+        </div>
+      </div>
+      <aside>
+        <ul>
+          <li>
+            <label for="ancho">Ancho:</label
+            ><input value="250" max="480" min="20" type="range" id="ancho" />
+          </li>
+          <li>
+            <label for="alto">Alto:</label
+            ><input type="range" value="20" min="10" max="100" id="alto" />
+          </li>
+          <li>
+            <label for="border-radius">Border Radius:</label
+            ><input
+              type="range"
+              min="0"
+              value="25"
+              max="50"
+              id="border-radius"
+            />
+          </li>
+          <li>
+            <label for="progress">Progreso:</label
+            ><input type="range" value="60" max="100" id="progress" />
+          </li>
+          <li>
+            <label for="color">Color:</label
+            ><input type="color" value="#b2181b" id="color" />
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <footer>co<b>deb</b>lis<sup>&reg;</sup> 2023</footer>
+  </body>
+  <script src="main.js"></script>
+</html>

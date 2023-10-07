@@ -206,7 +206,8 @@ sup {
 
 .image-processor {
   background-image: url("img/i5.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .image-motherboard {
