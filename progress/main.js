@@ -13,6 +13,7 @@ else content.style.color = "#000";
 
 ancho.addEventListener("change", () => {
   progressBar.style.width = ancho.value + "px";
+  // content.style.width = ancho.value + "px";
 });
 
 alto.addEventListener("change", () => {
@@ -35,4 +36,23 @@ color.addEventListener("change", () => {
   progressBarValue.style.backgroundColor = color.value;
   if (parseInt(progress.value) > 50) content.style.color = "#fff";
   else content.style.color = "#000";
+});
+
+const llenar = document.getElementById("completar");
+
+llenar.addEventListener("click", () => {
+  let width = 0;
+  llenar.style.pointerEvents = "none";
+  const interval = setInterval(() => {
+    if (width >= 100) {
+      llenar.style.pointerEvents = "all";
+      clearInterval(interval);
+    } else {
+      width++;
+      progressBarValue.style.width = `${width}%`;
+      content.innerHTML = `${width}%`;
+      if (width <= 50) content.style.color = "#000";
+      else content.style.color = "#fff";
+    }
+  }, 30);
 });
