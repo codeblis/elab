@@ -57,6 +57,12 @@ aside {
   color: #fff;
 }
 
+#progress-bar-content {
+  position: fixed;
+  width: inherit;
+  text-align: center;
+}
+
 aside {
   padding: 1em;
 }
