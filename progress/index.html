@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1>Custom Progress Bar</h1>
+      <h1>Custom Progress Bars & Sliders</h1>
     </header>
     <section>
       <div class="progress-bar-container">
@@ -20,16 +20,31 @@
       <aside>
         <ul>
           <li>
-            <label for="ancho">Ancho:</label
-            ><input value="250" max="480" min="20" type="range" id="ancho" />
+            <label for="ancho">Width:</label
+            ><input
+              class="linear-input"
+              value="250"
+              max="480"
+              min="20"
+              type="range"
+              id="ancho"
+            />
           </li>
           <li>
-            <label for="alto">Alto:</label
-            ><input type="range" value="20" min="10" max="100" id="alto" />
+            <label for="alto">Height:</label
+            ><input
+              class="linear-input"
+              type="range"
+              value="20"
+              min="10"
+              max="100"
+              id="alto"
+            />
           </li>
           <li>
             <label for="border-radius">Border Radius:</label
             ><input
+              class="linear-input"
               type="range"
               min="0"
               value="25"
@@ -38,15 +53,51 @@
             />
           </li>
           <li>
-            <label for="progress">Progreso:</label
-            ><input type="range" value="60" max="100" id="progress" />
+            <label for="linear-progress">Progress:</label
+            ><input
+              step="1"
+              class="linear-input"
+              type="range"
+              value="60"
+              max="100"
+              id="linear-progress"
+            />
           </li>
           <li>
-            <label for="color">Color:</label
-            ><input type="color" value="#006eff" id="color" />
+            <label for="linear-color">Color:</label
+            ><input type="color" value="#006eff" id="linear-color" />
           </li>
           <li>
-            <label for="color">Llenar Garga:</label><a id="completar">Llenar</a>
+            <a id="linear-fill-up" class="fill-up">Complete</a>
+          </li>
+        </ul>
+      </aside>
+      <div class="progress-bar-container dark">
+        <div class="cs-progress-bar">
+          <div class="cs-rating">
+            <h2>
+              <span class="cs-counter" data-target="">90<sup>%</sup></span>
+            </h2>
+            <div class="cs-block"></div>
+          </div>
+        </div>
+      </div>
+      <aside class="dark">
+        <ul>
+          <li>
+            <label for="cs-radius">Radius:</label
+            ><input type="range" value="60" max="100" id="cs-radius" />
+          </li>
+          <li>
+            <label for="cs-progress">Progress:</label
+            ><input type="range" value="60" max="100" id="cs-progress" />
+          </li>
+          <li>
+            <label for="cs-color">Color:</label
+            ><input type="color" value="#006eff" id="cs-color" />
+          </li>
+          <li>
+            <a id="cs-fill-up" class="fill-up">Complete</a>
           </li>
         </ul>
       </aside>
@@ -54,5 +105,5 @@
 
     <footer>co<b>deb</b>lis<sup>&reg;</sup> 2023</footer>
   </body>
-  <script src="main.js"></script>
+  <script src="js/linearProgressBar.js"></script>
 </html>
