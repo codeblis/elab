@@ -13,7 +13,7 @@
     <section>
       <div class="progress-bar-container">
         <div id="progress-bar">
-          <div id="progress-bar-content">60%</div>
+          <div id="progress-bar-content">68%</div>
           <div id="progress-bar-value"></div>
         </div>
       </div>
@@ -58,7 +58,7 @@
               step="1"
               class="linear-input"
               type="range"
-              value="60"
+              value="68"
               max="100"
               id="linear-progress"
             />
@@ -76,12 +76,8 @@
     <section>
       <div class="progress-bar-container dark">
         <div class="cs-progress-bar">
-          <div class="cs-rating">
-            <h2>
-              <span class="cs-counter" data-target="">90<sup>%</sup></span>
-            </h2>
-            <div class="cs-block"></div>
-          </div>
+          <h2><span id="cs-counter">0</span><sup>%</sup></h2>
+          <div class="cs-rating"></div>
         </div>
       </div>
       <aside class="dark">
@@ -91,12 +87,22 @@
             ><input type="range" value="60" max="100" id="cs-radius" />
           </li>
           <li>
+            <label for="cs-segments">Segments:</label
+            ><input
+              type="range"
+              value="100"
+              min="3"
+              max="200"
+              id="cs-segments"
+            />
+          </li>
+          <li>
             <label for="cs-progress">Progress:</label
-            ><input type="range" value="60" max="100" id="cs-progress" />
+            ><input type="range" value="68" max="100" id="cs-progress" />
           </li>
           <li>
             <label for="cs-color">Color:</label
-            ><input type="color" value="#006eff" id="cs-color" />
+            ><input type="color" value="#00cc0c" id="cs-color" />
           </li>
           <li>
             <a id="cs-fill-up" class="fill-up">Complete</a>
@@ -107,4 +113,5 @@
     <footer>co<b>deb</b>lis<sup>&reg;</sup> 2023</footer>
   </body>
   <script src="js/linearProgressBar.js"></script>
+  <script src="js/CircularSegmentedProgressBar.js"></script>
 </html>

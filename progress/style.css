@@ -67,11 +67,6 @@ aside {
   background-color: #015dd4;
 }
 
-.dark {
-  background-color: #252836;
-  color: #fff;
-}
-
 input[type="range"] {
   appearance: none;
   -moz-appearance: none;

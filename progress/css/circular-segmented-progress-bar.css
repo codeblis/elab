@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.dark {
+  background: radial-gradient(#333, #111);
+  color: #fff;
+}
+
+.cs-progress-bar {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 2px;
+}
+
+.cs-progress-bar .cs-rating {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cs-progress-bar .cs-rating .cs-block {
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background: #111;
+  left: 50%;
+  transform-origin: 50% 100px;
+  border-radius: 5px;
+  opacity: 0;
+  animation: animate 0.1s linear forwards;
+}
+
+@keyframes animate {
+  to {
+    opacity: 1;
+  }
+}
+
+.cs-progress-bar h2 {
+  font-family: Roboto;
+  position: absolute;
+  color: #eee;
+  top: 32%;
+  left: 31%;
+  text-align: center;
+}
+
+#cs-counter {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.cs-progress-bar .cs-rating h2 sup {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+#cs-fill-up {
+  background-color: var(--cs-color);
+  color: #111;
+}

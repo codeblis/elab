@@ -21,6 +21,8 @@ document.documentElement.style.setProperty(
 
 linear_fill_up.style.backgroundColor = linear_color.value;
 
+progressBarValue.style.width = progress.value + "%";
+content.innerHTML = progress.value + " %";
 if (parseInt(progress.value) > 50) content.style.color = "#fff";
 else content.style.color = "#000";
 
@@ -64,7 +66,13 @@ linear_fill_up.addEventListener("click", () => {
   linear_fill_up.style.pointerEvents = "none";
   const interval = setInterval(() => {
     if (width >= 100) {
-      linear_fill_up.style.pointerEvents = "all";
+      setTimeout(() => {
+        progressBarValue.style.width = progress.value + "%";
+        content.innerHTML = progress.value + " %";
+        if (parseInt(progress.value) > 50) content.style.color = "#fff";
+        else content.style.color = "#000";
+        linear_fill_up.style.pointerEvents = "all";
+      }, 1500);
       clearInterval(interval);
     } else {
       width++;
