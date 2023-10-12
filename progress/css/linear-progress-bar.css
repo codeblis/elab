@@ -10,11 +10,11 @@
 }
 
 #progress-bar-value {
-  background-color: rgb(0, 110, 255);
+  background-color: var(--linear-color);
   width: 0%;
   height: 20px;
   color: #fff;
-  transition: width 200ms ease;
+  transition: width 500ms ease;
 }
 
 #progress-bar-content {
@@ -26,51 +26,22 @@
   height: 100%;
 }
 
-aside {
-  padding: 1em;
-}
-
-aside ul {
-  list-style: none;
-  font-size: 1.1em;
-}
-
-aside ul li {
-  margin: 1em 0;
-}
-
-aside ul li label {
-  margin-right: 1em;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  background-color: #222;
-  width: 100%;
-  padding: 1em 0;
-  text-align: center;
-  color: #fff;
-  font-size: 1.1em;
-}
-
-.linear-input,
-.linear-input::-webkit-slider-runnable-track,
-.linear-input::-webkit-slider-thumb {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: #eee;
-}
-
 .linear-input::-webkit-slider-thumb {
   width: 13px;
   height: 13px;
   margin-top: -4px;
   border-radius: 15px;
   background-color: var(--linear-color);
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
+  padding: 7px;
   cursor: pointer;
+}
+
+.linear-input::-webkit-slider-thumb:hover {
+  filter: brightness(0.8);
+}
+
+.linear-input::-webkit-slider-thumb:active {
+  filter: brightness(1.2);
 }
 
 .linear-input::-webkit-slider-runnable-track {

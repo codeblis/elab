@@ -21,7 +21,7 @@
 .cs-progress-bar .cs-rating .cs-block {
   position: absolute;
   width: 3px;
-  height: 15px;
+  height: 17px;
   background: #111;
   left: 50%;
   transform-origin: 50% 100px;
@@ -39,9 +39,12 @@
 .cs-progress-bar h2 {
   font-family: Roboto;
   position: absolute;
+  width: 100%;
   color: #eee;
-  top: 32%;
-  left: 31%;
+  top: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -58,4 +61,83 @@
 #cs-fill-up {
   background-color: var(--cs-color);
   color: #111;
+}
+
+.cs-input {
+  background: #222;
+}
+
+.cs-input::-webkit-slider-thumb {
+  width: 10px;
+  height: 25px;
+  margin-top: -9px;
+  border-radius: 2px;
+  background-color: var(--cs-color);
+  cursor: pointer;
+  box-shadow: 0 0 15px var(--cs-color), 0 0 30px var(--cs-color);
+}
+
+.cs-input::-webkit-slider-thumb:hover {
+  filter: brightness(0.8);
+}
+
+.cs-input::-webkit-slider-thumb:active {
+  filter: brightness(1.2);
+}
+
+.cs-input::-webkit-slider-runnable-track {
+  max-height: 7px;
+  border-radius: 1px;
+}
+
+#cs-segments::-webkit-slider-runnable-track {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    var(--cs-color) 0%,
+    var(--cs-color) 25%,
+    transparent 25%,
+    transparent 50%,
+    var(--cs-color) 50%,
+    var(--cs-color) 75%,
+    transparent 75%,
+    transparent 100%
+  );
+  background-size: 10px;
+  animation: slice 2s linear infinite;
+}
+
+#cs-progress::-webkit-slider-runnable-track {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    var(--cs-color) 0%,
+    var(--cs-color) 25%,
+    transparent 25%,
+    transparent 50%,
+    var(--cs-color) 50%,
+    var(--cs-color) 75%,
+    transparent 75%,
+    transparent 100%
+  );
+  background-size: 10px;
+  animation: slice 2s linear infinite;
+}
+.cs-li {
+  position: relative;
+}
+
+#cs-radius::after {
+  position: absolute;
+  content: "";
+  width: var(--cs-radius-position);
+  height: 7px;
+  background-color: #111;
+}
+
+.cs-aside li label {
+  font-family: Roboto;
+}
+
+#cs-progress::-webkit-slider-runnable-track {
 }

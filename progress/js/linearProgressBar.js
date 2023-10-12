@@ -72,7 +72,7 @@ linear_fill_up.addEventListener("click", () => {
         if (parseInt(progress.value) > 50) content.style.color = "#fff";
         else content.style.color = "#000";
         linear_fill_up.style.pointerEvents = "all";
-      }, 1500);
+      }, 1200);
       clearInterval(interval);
     } else {
       width++;
@@ -83,19 +83,3 @@ linear_fill_up.addEventListener("click", () => {
     }
   }, 30);
 });
-
-function setBackgroundSize(input) {
-  document.documentElement.style.setProperty(
-    `--background-size-${input.id}`,
-    `${getBackgroundSize(input)}%`
-  );
-}
-
-function getBackgroundSize(input) {
-  const min = +input.min || 0;
-  const max = +input.max || 100;
-  const value = +input.value;
-
-  const size = ((value - min) / (max - min)) * 100;
-  return size;
-}

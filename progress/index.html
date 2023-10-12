@@ -10,14 +10,14 @@
     <header>
       <h1>Custom Progress Bars & Sliders</h1>
     </header>
-    <section>
-      <div class="progress-bar-container">
+    <section id="linear-section">
+      <div class="progress-bar-container ligth">
         <div id="progress-bar">
           <div id="progress-bar-content">68%</div>
           <div id="progress-bar-value"></div>
         </div>
       </div>
-      <aside>
+      <aside class="ligth">
         <ul>
           <li>
             <label for="ancho">Width:</label
@@ -80,29 +80,35 @@
           <div class="cs-rating"></div>
         </div>
       </div>
-      <aside class="dark">
+      <aside class="dark cs-aside">
         <ul>
-          <li>
-            <label for="cs-radius">Radius:</label
-            ><input type="range" value="60" max="100" id="cs-radius" />
-          </li>
-          <li>
+          <li class="cs-li">
             <label for="cs-segments">Segments:</label
             ><input
               type="range"
+              step="1"
+              class="cs-input"
               value="100"
               min="3"
-              max="200"
+              max="100"
               id="cs-segments"
             />
           </li>
-          <li>
+          <li class="cs-li">
             <label for="cs-progress">Progress:</label
-            ><input type="range" value="68" max="100" id="cs-progress" />
+            ><input
+              class="cs-input"
+              type="range"
+              min="0"
+              step="1"
+              value="68"
+              max="100"
+              id="cs-progress"
+            />
           </li>
           <li>
             <label for="cs-color">Color:</label
-            ><input type="color" value="#00cc0c" id="cs-color" />
+            ><input type="color" value="#ffea00" id="cs-color" />
           </li>
           <li>
             <a id="cs-fill-up" class="fill-up">Complete</a>
@@ -112,6 +118,7 @@
     </section>
     <footer>co<b>deb</b>lis<sup>&reg;</sup> 2023</footer>
   </body>
+  <script src="main.js"></script>
   <script src="js/linearProgressBar.js"></script>
   <script src="js/CircularSegmentedProgressBar.js"></script>
 </html>
