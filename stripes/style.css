@@ -1,0 +1,37 @@
+html {
+  background-color: #1b4342;
+}
+
+.stripes-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stripes {
+  width: 200px;
+  height: 25px;
+  background-color: #f3ac3e;
+}
+
+.circle {
+  position: absolute;
+  background-color: #1b4342;
+  width: 360px;
+  height: 360px;
+  top: 51%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.left {
+  left: 60px;
+}
+
+.right {
+  right: 60px;
+}
